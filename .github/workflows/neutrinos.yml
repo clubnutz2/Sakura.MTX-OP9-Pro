@@ -21,7 +21,7 @@ jobs:
         run: |
           OUT_PARENT_DIR="$(dirname $GITHUB_WORKSPACE)"
           mkdir -p artifacts
-          cp "$OUT_PARENT_DIR/out/AnyKernel3/"*.zip artifacts/ || { echo "INFO: ZIPs not yet available. Continuing." && exit 0; }
+          cp "$OUT_PARENT_DIR/SAKURA_OUT/AnyKernel3/"*.zip artifacts/ || { echo "INFO: ZIPs not yet available. Continuing." && exit 0; }
 
       - name: Upload ZIP files as artifacts
         uses: actions/upload-artifact@v4
